@@ -7,6 +7,7 @@
 }
 body{
     background-color: var(--prussian-blue);
+    overflow: auto;
 }
 header{
     background-color: var(--picton-blue);
