@@ -8,6 +8,10 @@
 body{
     background-color: var(--prussian-blue);
 }
+header{
+    background-color: var(--picton-blue);
+    background-image: linear-gradient(to bottom right, var(--steel-blue), var(--lapis-lazuli));
+}
 .title{
     color: white;
 }
