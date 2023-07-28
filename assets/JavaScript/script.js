@@ -3,7 +3,7 @@ var weatherData = []
 var pastChoices = JSON.parse(localStorage.getItem("Cities")) || []
 var searchForm = document.querySelector("#search-form")
 
-// TODO: get user selected city, get coordinates
+//  get user selected city, get coordinates
 searchForm.addEventListener("submit", chooseCity)
 
 
@@ -51,10 +51,10 @@ function chooseCity(event){
 
     }
 
-// TODO: Save cities in local storage, generate buttons to search for them again
+// Save cities in local storage, generate buttons to search for them again
 function saveCities(city){
   if(city !== "") {
-    var x = pastChoices.includes(city)
+    var x = pastChoices.slice(0,5).includes(city)
     if (!x) {
     pastChoices.unshift(city)
     localStorage.setItem("Cities", JSON.stringify(pastChoices));
@@ -78,7 +78,7 @@ cityListEl.addEventListener("click", function(event){
   input.value = text
 })
 }
-// TODO: generate current weather card with API info
+//  generate current weather card with API info
 
 function currentForecast(data){
   var weatherCardEl = document.querySelector("#current-weather")
@@ -97,7 +97,7 @@ function currentForecast(data){
 }
 
 
-// TODO: Generate five day forcast with API info
+//  Generate five day forcast with API info
 
 function fiveDayForecast(data){
   var forecastEl = document.querySelector("#five-day-forecast")
