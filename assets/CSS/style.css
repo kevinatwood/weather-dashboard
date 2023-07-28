@@ -1,0 +1,31 @@
+:root{
+    --picton-blue: #00a6fbff;
+    --steel-blue: #0582caff;
+    --lapis-lazuli: #006494ff;
+    --prussian-blue: #003554ff;
+    --rich-black: #051923ff;
+}
+body{
+    background-color: var(--prussian-blue);
+}
+.title{
+    color: white;
+}
+#search-form{
+    background-color: var(--prussian-blue);
+}
+.favorite-city{
+    height: 50px;
+}
+.favorite-city:hover{
+    cursor: pointer;
+    color: var(--prussian-blue);
+    font-size: 99%;
+}
+.favorite-city:active{
+    font-size: 95%;
+}
+#current-forecast-ul{
+   list-style: none;
+   padding-inline-start: 0px;
+}
