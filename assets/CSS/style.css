@@ -13,6 +13,7 @@ body{
 }
 #search-form{
     background-color: var(--prussian-blue);
+    max-width: 400px;
 }
 .favorite-city{
     height: 50px;
