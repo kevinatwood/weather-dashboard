@@ -14,17 +14,17 @@
     <header class = "text-center">
         <h1 class="title">Weather Dashboard</h1>
     </header>
-    <section class="d-flex row">
-        <form id = "search-form" class ="card col-md-3 text-center m-3">
-            <h2 class="p-1 title"> Search for a City:</h2>
+    <section class="d-flex row justify-content-center">
+        <form id = "search-form" class ="card col-md-9 m-3">
+            <h2 class="p-1 title text-center"> Search for a City:</h2>
             <input type="text" id="city-search">
             <button class = "btn btn-outline-light m-3" id = "submit-btn">Search</button>
             <ul id = "favorites" class="list-group"></ul>        
         </form>
-        <div id = "current-weather" class = "col-md-9 m-3">
+        <div id = "current-weather" class = "col-md-12 m-3">
         </div>
     </section>
-    <section id = "five-day-forecast" class = " d-flex row justify-content-around"></section>
+    <section id = "five-day-forecast" class = " d-flex row justify-content-around m-3"></section>
 
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
     <script src = "./assets/JavaScript/script.js"></script>

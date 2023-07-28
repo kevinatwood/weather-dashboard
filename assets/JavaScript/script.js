@@ -68,7 +68,7 @@ function renderCities(){
   cityListEl.innerHTML=""
   for (var i = 0; i < newList.length; i++){
     var cityList = document.createElement("li")
-    cityList.setAttribute("class", "list-group-item favorite-city")
+    cityList.setAttribute("class", "list-group-item favorite-city text-center")
     cityListEl.appendChild(cityList)
     cityList.innerHTML = `${newList[i].toUpperCase()}`
   }
