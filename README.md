@@ -1,4 +1,4 @@
-# National Park Air Quality Tool
+# Weather Dashboard
 
   ## Description
   This weather dashboard uses the APIs Day.js and OpenWeather to bring the user current weather in their selected city, as well as a five day forecast. Styled using bootstrap, this site is responsive and displays the information clearly on any user device
