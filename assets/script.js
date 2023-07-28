@@ -60,10 +60,12 @@ function saveCities(city){
     localStorage.setItem("Cities", JSON.stringify(pastChoices));
 }
   }
+  renderCities()
 }
 function renderCities(){
   var cityListEl = document.querySelector("#favorites")
   var newList = pastChoices.slice(0,5)
+  cityListEl.innerHTML=""
   for (var i = 0; i < newList.length; i++){
     var cityList = document.createElement("li")
     cityList.setAttribute("class", "list-group-item favorite-city")
