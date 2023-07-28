@@ -14,7 +14,7 @@
 Type in any city and the app will display results for that city. The app will also save the 5 most recent searches and display them on the screen, so users can click them to automatically populate the search field. 
 
 
-## [Link to Deplayed Site](https://kevinatwood.github.io/weather-dashboard/)
+## [Link to Deployed Site](https://kevinatwood.github.io/weather-dashboard/)
 
 
 
