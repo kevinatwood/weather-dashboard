@@ -10,7 +10,7 @@ searchForm.addEventListener("submit", chooseCity)
 function chooseCity(event){
     event.preventDefault()
     var userInput = document.querySelector("#city-search").value.toLowerCase()
-    var requestUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${userInput}&limit=5&appid=${apiKey}`
+    var requestUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${userInput}&limit=5&appid=${apiKey}`
     fetch(requestUrl)
     .then(function (response) {
       return response.json(); 
@@ -27,8 +27,8 @@ function chooseCity(event){
     }
 
     function getWeather(lat, lon){
-      var requestUrlCurrent = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`
-      var requestUrlForecast = `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`
+      var requestUrlCurrent = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`
+      var requestUrlForecast = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`
 
       fetch(requestUrlForecast)
       .then(function(response){
